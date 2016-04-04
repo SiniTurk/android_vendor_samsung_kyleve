@@ -4,11 +4,11 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/bin/BCM4330B1_002.001.003.0967.1173.hcd:system/bin/BCM4330B1_002.001.003.0967.1173.hcd \
 	$(LOCAL_PATH)/proprietary/bin/bkmgrd:system/bin/bkmgrd \
 	$(LOCAL_PATH)/proprietary/bin/glgps:system/bin/glgps \
-    $(LOCAL_PATH)/proprietary/bin/gps.cer:system/bin/gps.cer \
-    $(LOCAL_PATH)/proprietary/bin/gpslogd:system/bin/gpslogd \
-    $(LOCAL_PATH)/proprietary/bin/macloader:system/bin/macloader \
+        $(LOCAL_PATH)/proprietary/bin/gps.cer:system/bin/gps.cer \
+        $(LOCAL_PATH)/proprietary/bin/gpslogd:system/bin/gpslogd \
+        $(LOCAL_PATH)/proprietary/bin/macloader:system/bin/macloader \
 	$(LOCAL_PATH)/proprietary/bin/mttlogger:system/bin/mttlogger \
-    $(LOCAL_PATH)/proprietary/bin/rild:system/bin/rild \
+        $(LOCAL_PATH)/proprietary/bin/rild:system/bin/rild \
 	$(LOCAL_PATH)/proprietary/bin/mfgloader:system/bin/mfgloader \
 	$(LOCAL_PATH)/proprietary/bin/sensord:system/bin/sensord \
 	$(LOCAL_PATH)/proprietary/bin/wlandutservice:system/bin/wlandutservice
@@ -17,14 +17,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libbrcmmp3dec.so:system/lib/libbrcmmp3dec.so \
 	$(LOCAL_PATH)/proprietary/lib/libmp3_dec_dummy.so:system/lib/libmp3_dec_dummy.so \
-	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.mp3.decoder.so:system/lib/libOMX.brcm.audio.mp3.decoder.so \
 	
 # amr 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libbrcmamrnbaridec.so:system/lib/libbrcmamrnbaridec.so \
 	$(LOCAL_PATH)/proprietary/lib/libbrcmamrwbaridec.so:system/lib/libbrcmamrwbaridec.so \
-	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.amrnb.decoder.so:system/lib/libOMX.brcm.audio.amrnb.decoder.so \
-	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.amrwb.decoder.so:system/lib/libOMX.brcm.audio.amrwb.decoder.so \
 	$(LOCAL_PATH)/proprietary/lib/libsAMRNB.so:system/lib/libsAMRNB.so \
 	$(LOCAL_PATH)/proprietary/lib/libsAMRWB.so:system/lib/libsAMRWB.so
 	
@@ -32,46 +29,33 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libFraunhoferAAC.so:system/lib/libFraunhoferAAC.so \
 	$(LOCAL_PATH)/proprietary/lib/libbrcmheaacdecoder.so:system/lib/libbrcmheaacdecoder.so \
-	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.aac.encoder.so:system/lib/libOMX.brcm.audio.aac.encoder.so \
 	$(LOCAL_PATH)/proprietary/lib/libaacdecoderwrapper.so:system/lib/libaacdecoderwrapper.so \
 	$(LOCAL_PATH)/proprietary/lib/libbrcmaacenc.so:system/lib/libbrcmaacenc.so \
-	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.aac.decoder.so:system/lib/libOMX.brcm.audio.aac.decoder.so
 	
 # h264
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.h264.hw.decoder.so:system/lib/libOMX.brcm.video.h264.hw.decoder.so \
-	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.h264.hw.encoder.so:system/lib/libOMX.brcm.video.h264.hw.encoder.so
+
 
 # other
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
-	$(LOCAL_PATH)/proprietary/lib/libBrcmOMX_Component.so:system/lib/libBrcmOMX_Component.so \
-    $(LOCAL_PATH)/proprietary/lib/libBrcmOMX_Core.so:system/lib/libBrcmOMX_Core.so \
 	$(LOCAL_PATH)/proprietary/lib/libcodec_util.so:system/lib/libcodec_util.so \
-    $(LOCAL_PATH)/proprietary/lib/libhwcodec.so:system/lib/libhwcodec.so \
+        $(LOCAL_PATH)/proprietary/lib/libhwcodec.so:system/lib/libhwcodec.so \
 	$(LOCAL_PATH)/proprietary/lib/libuecodec.so:system/lib/libuecodec.so
 	
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/proprietary/lib/egl/libGLES_hawaii.so:system/lib/egl/libGLES_hawaii.so \
+    $(LOCAL_PATH)/proprietary/lib/egl/libGLES_hawaii.so:system/lib/egl/libGLES_hawaii.so \
     $(LOCAL_PATH)/proprietary/lib/hw/audio.primary.hawaii.so:system/lib/hw/audio.primary.hawaii.so \
     $(LOCAL_PATH)/proprietary/lib/hw/camera.hawaii.so:system/lib/hw/camera.hawaii.so \
-     $(LOCAL_PATH)/proprietary/lib/hw/camera.goldfish.so:system/lib/hw/camera.goldfish.so \
     $(LOCAL_PATH)/proprietary/lib/hw/gps.hawaii.so:system/lib/hw/gps.hawaii.so \
-    $(LOCAL_PATH)/proprietary/lib/hw/gps.goldfish.so:system/lib/hw/gps.goldfish.so \
     $(LOCAL_PATH)/proprietary/lib/hw/gralloc.hawaii.so:system/lib/hw/gralloc.hawaii.so \
-    $(LOCAL_PATH)/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
     $(LOCAL_PATH)/proprietary/lib/hw/hwcomposer.hawaii.so:system/lib/hw/hwcomposer.hawaii.so \
-	$(LOCAL_PATH)/proprietary/lib/hw/sensors.hawaii.so:system/lib/hw/sensors.hawaii.so \
-	$(LOCAL_PATH)/proprietary/lib/hw/sensors.goldfish.so:system/lib/hw/sensors.goldfish.so \
-	$(LOCAL_PATH)/proprietary/lib/hw/audio.usb.hawaii.so:system/lib/hw/audio.usb.hawaii.so \
-	$(LOCAL_PATH)/proprietary/lib/hw/bplus.default.so:system/lib/hw/bplus.default.so \
-	$(LOCAL_PATH)/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
-	$(LOCAL_PATH)/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
-	$(LOCAL_PATH)/proprietary/lib/hw/lights.hawaii.so:system/vendor/lib/hw/lights.hawaii.so \
-	$(LOCAL_PATH)/proprietary/lib/hw/lights.goldfish.so:system/vendor/lib/hw/lights.goldfish.so \
- 	$(LOCAL_PATH)/proprietary/lib/hw/power.hawaii.so:system/vendor/lib/hw/power.hawaii.so \
- 	$(LOCAL_PATH)/proprietary/lib/hw/power.default.so:system/vendor/lib/hw/power.default.so \
- 	$(LOCAL_PATH)/proprietary/lib/hw/power.goldfish.so:system/vendor/lib/hw/power.goldfish.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/sensors.hawaii.so:system/lib/hw/sensors.hawaii.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/audio.usb.hawaii.so:system/lib/hw/audio.usb.hawaii.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/bplus.default.so:system/lib/hw/bplus.default.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
+    $(LOCAL_PATH)/proprietary/vendor/lib/hw/lights.hawaii.so:system/vendor/lib/hw/lights.hawaii.so
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so:system/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so \
@@ -128,7 +112,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libsoc.so:system/lib/libsoc.so \
 	$(LOCAL_PATH)/proprietary/lib/libsoundspeed.so:system/lib/libsoundspeed.so \
 	$(LOCAL_PATH)/proprietary/lib/libjpeg_turbo.so:system/lib/libjpeg_turbo.so \
-	$(LOCAL_PATH)/proprietary/lib/libbt-vendor.so:system/lib/libbt-vendor.so \
 	$(LOCAL_PATH)/proprietary/lib/libsthmb.so:system/lib/libsthmb.so \
 	$(LOCAL_PATH)/proprietary/lib/libwvdrm_L3.so:system/lib/libwvdrm_L3.so \
 	$(LOCAL_PATH)/proprietary/lib/libwvm.so:system/lib/libwvm.so \
@@ -143,13 +126,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libISP.so:system/lib/libISP.so \
     $(LOCAL_PATH)/proprietary/lib/libisp2.so:system/lib/libisp2.so \
 	$(LOCAL_PATH)/proprietary/lib/libisp3.so:system/lib/libisp3.so \
-	$(LOCAL_PATH)/proprietary/lib/libjpega.so:system/lib/libjpega.so \
-	$(LOCAL_PATH)/proprietary/lib/libedmnativehelper.so:system/lib/libedmnativehelper.so \
-	$(LOCAL_PATH)/proprietary/lib/libedmnativehelperservice.so:system/lib/libedmnativehelperservice.so \
-	$(LOCAL_PATH)/proprietary/lib/libbt-codec.so:system/lib/libbt-codec.so \
-	$(LOCAL_PATH)/proprietary/lib/libbt-codec_aptx.so:system/lib/libbt-codec_aptx.so \
-	$(LOCAL_PATH)/proprietary/lib/libbt-client-api.so:system/lib/libbt-client-api.so \
-	$(LOCAL_PATH)/proprietary/lib/libbt-aptx-4.0.3.so:system/lib/libbt-aptx-4.0.3.so
+	$(LOCAL_PATH)/proprietary/lib/libjpega.so:system/lib/libjpega.so
 	
  PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/bin/cate_rpc_util:system/bin/cate_rpc_util \
@@ -188,3 +165,45 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
 	$(LOCAL_PATH)/proprietary/media/battery_error.qmg:system/media/battery_error.qmg \
 	$(LOCAL_PATH)/proprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg
+
+#OMX
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/proprietary/lib/libBrcmOMX_Component.so:system/lib/libBrcmOMX_Component.so \
+        $(LOCAL_PATH)/proprietary/lib/libBrcmOMX_Core.so:system/lib/libBrcmOMX_Core.so \
+	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.mp3.decoder.so:system/lib/libOMX.brcm.audio.mp3.decoder.so \
+        $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.amrnb.decoder.so:system/lib/libOMX.brcm.audio.amrnb.decoder.so \
+	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.aac.encoder.so:system/lib/libOMX.brcm.audio.aac.encoder.so \
+	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.aac.decoder.so:system/lib/libOMX.brcm.audio.aac.decoder.so \
+	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.amrwb.decoder.so:system/lib/libOMX.brcm.audio.amrwb.decoder.so \
+        $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.mpeg4.encoder.so:system/lib/libOMX.brcm.video.mpeg4.encoder.so \
+        $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.amrwb.encoder.so:system/lib/libOMX.brcm.audio.amrwb.encoder.so \
+        $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.dummy.decoder.so:system/lib/libOMX.brcm.video.dummy.decoder.so \
+        $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.h264.decoder.so:system/lib/libOMX.brcm.video.h264.decoder.so \
+        $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.vpx.decoder.so:system/lib/libOMX.brcm.video.vpx.decoder.so \
+        $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.h263.encoder.so:system/lib/libOMX.brcm.video.h263.encoder.so \
+        $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.mpeg4.decoder.so:system/lib/libOMX.brcm.video.mpeg4.decoder.so \
+        $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.wma.decoder.so:system/lib/libOMX.brcm.audio.wma.decoder.so \
+        $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.dummy.encoder.so:system/lib/libOMX.brcm.video.dummy.encoder.so \
+        $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.h264.encoder.so:system/lib/libOMX.brcm.video.h264.encoder.so \
+        $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.mp3.encoder.so:system/lib/libOMX.brcm.audio.mp3.encoder.so \
+        $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.h263.decoder.so:system/lib/libOMX.brcm.video.h263.decoder.so \
+        $(LOCAL_PATH)/proprietary/lib/libh264_enc_bp.so:system/lib/libh264_enc_bp.so \
+        $(LOCAL_PATH)/proprietary/lib/libh264_dec_bp.so:system/lib/libh264_dec_bp.so \
+        $(LOCAL_PATH)/proprietary/lib/libh263_enc_p3.so:system/lib/libh263_enc_p3.so \
+        $(LOCAL_PATH)/proprietary/lib/libh264_dec_hp.so:system/lib/libh264_dec_hp.so \
+        $(LOCAL_PATH)/proprietary/lib/libmpeg4_fake_dec.so:system/lib/libmpeg4_fake_dec.so \
+        $(LOCAL_PATH)/proprietary/lib/libvpx_dec.so:system/lib/libvpx_dec.so \
+        $(LOCAL_PATH)/proprietary/lib/libmpeg4_dec_asp.so:system/lib/libmpeg4_dec_asp.so \
+        $(LOCAL_PATH)/proprietary/lib/libbrcmamrwbarienc.so:system/lib/libbrcmamrwbarienc.so \
+        $(LOCAL_PATH)/proprietary/lib/libbrcmmp3enc.so:system/lib/libbrcmmp3enc.so \
+        $(LOCAL_PATH)/proprietary/lib/libbrcmwmadec.so:system/lib/libbrcmwmadec.so \
+        $(LOCAL_PATH)/proprietary/lib/libmpeg4_dummy_enc.so:system/lib/libmpeg4_dummy_enc.so \
+        $(LOCAL_PATH)/proprietary/lib/libh263_dec_p3.so:system/lib/libh263_dec_p3.so \
+        $(LOCAL_PATH)/proprietary/lib/libh263_dec_p3.so:system/lib/libmpeg4_enc_sp.so:system/lib/libmpeg4_enc_sp.so \
+#H/W Encoders and decoders 
+#	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.h264.hw.encoder.so:system/lib/libOMX.brcm.video.h264.hw.encoder.so \
+#	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.h264.hw.decoder.so:system/lib/libOMX.brcm.video.h264.hw.decoder.so \
+#       $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.mpeg4.hw.decoder.so:system/lib/libOMX.brcm.video.mpeg4.hw.decoder.so \
+#       $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.vc1.hw.decoder.so:system/lib/libOMX.brcm.video.vc1.hw.decoder.so: \
+#       $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.h264.hw.encoder.so:system/lib/libOMX.brcm.video.h264.hw.encoder.so \
+#       $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.h264.hw.decoder.so:system/lib/libOMX.brcm.video.h264.hw.decoder.so: \
