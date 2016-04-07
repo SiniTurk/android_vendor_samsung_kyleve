@@ -14,7 +14,7 @@ PRODUCT_COPY_FILES += \
 	
 # mp3 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/proprietary/lib/libbrcmmp3dec.so:system/lib/libbrcmmp3dec.so \
+	$(LOCAL_PATH)/proprietary/lib/libbrcmmp3dec.so:system/lib/libbrcmmp3deusb_portd.confc.so \
 	$(LOCAL_PATH)/proprietary/lib/libmp3_dec_dummy.so:system/lib/libmp3_dec_dummy.so \
 	
 # amr 
@@ -31,9 +31,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libaacdecoderwrapper.so:system/lib/libaacdecoderwrapper.so \
 	$(LOCAL_PATH)/proprietary/lib/libbrcmaacenc.so:system/lib/libbrcmaacenc.so \
 	
-# h264
-PRODUCT_COPY_FILES += \
-
 
 # other
 PRODUCT_COPY_FILES += \
@@ -68,7 +65,8 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/bin/usb_portd:system/bin/usb_portd \
 	$(LOCAL_PATH)/proprietary/bin/usbdev_mode:system/bin/usbdev_mode \
 	$(LOCAL_PATH)/proprietary/lib/libusb_config.so:system/lib/libusb_config.so \
-	$(LOCAL_PATH)/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf \                                      			 		$(LOCAL_PATH)/proprietary/lib/libusb_config.so:system/lib/libusb_config.so 
+	$(LOCAL_PATH)/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf \
+ 	$(LOCAL_PATH)/proprietary/lib/libusb_config.so:system/lib/libusb_config.so
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
