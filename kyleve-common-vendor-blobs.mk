@@ -14,7 +14,7 @@ PRODUCT_COPY_FILES += \
 	
 # mp3 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/proprietary/lib/libbrcmmp3dec.so:system/lib/libbrcmmp3deusb_portd.confc.so \
+	$(LOCAL_PATH)/proprietary/lib/libbrcmmp3dec.so:system/lib/libbrcmmp3dec.so \
 	$(LOCAL_PATH)/proprietary/lib/libmp3_dec_dummy.so:system/lib/libmp3_dec_dummy.so \
 	
 # amr 
