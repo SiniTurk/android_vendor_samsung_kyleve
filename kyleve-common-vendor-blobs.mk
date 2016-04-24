@@ -200,6 +200,10 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/proprietary/lib/libmpeg4_dummy_enc.so:system/lib/libmpeg4_dummy_enc.so \
         $(LOCAL_PATH)/proprietary/lib/libh263_dec_p3.so:system/lib/libh263_dec_p3.so \
         $(LOCAL_PATH)/proprietary/lib/libh263_dec_p3.so:system/lib/libmpeg4_enc_sp.so:system/lib/libmpeg4_enc_sp.so \
+#WRONG COLORS
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/proprietary/lib/libstagefright.so:system/lib/libmpeg4_enc_sp.so:system/lib/libstagefright.so \
+
 #H/W Encoders and decoders 
 #	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.h264.hw.encoder.so:system/lib/libOMX.brcm.video.h264.hw.encoder.so \
 #	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.h264.hw.decoder.so:system/lib/libOMX.brcm.video.h264.hw.decoder.so \
